@@ -50,6 +50,24 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
   }
+select{
+  padding: 6px 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: snow;
+}
+input[type=submit],input[type=text],input[type=password]{
+  padding: 7px 10px;
+  background-color: snow;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+input[type=submit]:hover{
+  background-color: teal;
+  color: white;
+  transition: ease-in;
+  transition-duration: 0.3s;
+}
 table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
@@ -87,4 +105,18 @@ label{
 }
 h1, h2 {
     font-family: Arial, Helvetica, sans-serif;
+}
+.login{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+input[value=Zaloguj]{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.generator{
+  padding: 20px 20px;
 }
