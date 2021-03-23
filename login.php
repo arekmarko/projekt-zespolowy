@@ -7,8 +7,8 @@
     <body>
         <span class="login">
             <form action="generuj.php">
-                <input type="text" placeholder="Login">
-                <input type="password" placeholder="Password">
+                <input type="text" placeholder="Login"><br>
+                <input type="password" placeholder="Password"><br>
                 <input type="submit" value="Zaloguj">
             </form>
         </span>
