@@ -46,27 +46,41 @@
             <li class="zalbtn" style="float:right";><a href="login.php">Wyloguj się</a></li>
         </ul>
         <div class="generator">
-        <form action="">
-            <select name="grupa" id="grupa">
-                <option value="1">3ID11A</option>
-                <option value="2">3ID11B</option>
-            </select>
-            <input type="text" placeholder="Dodaj grupę" id="grupatxt">
-            <input type="submit" value="Dodaj"><br>
-            <select name="wykladowca" id="wykladowca">
-                <option value="1">dr inż. Arkadiusz Chrobot</option>
-                <option value="2">dr inż. Andrzej Kułakowski</option>
-            </select>
-            <input type="text" placeholder="Dodaj wykładowce">
-            <input type="submit" value="Dodaj"><br>
-            <select name="przedmiot" id="przedmiot">
-                <option value="1">Grafika komputerowa</option>
-                <option value="2">Inżynieria programowania</option>
-            </select>
-            <input type="text" placeholder="Dodaj przedmiot">
-            <input type="submit" value="Dodaj"><br>
-            <input type="submit" value="Generuj"><br>
-        </form>
-        </div>
+            <div class="genbts">
+                <button class="tablinks" onclick="openG(event, 'Sala')">Dodaj salę</button>
+                <button class="tablinks" onclick="openG(event, 'Grupa')">Dodaj grupę</button>
+                <button class="tablinks" onclick="openG(event, 'Wykladowca')">Dodaj wykładowce</button>
+            </div>
+                <div class="content" id="Sala">
+                    <input type="text" placeholder="Numer sali">
+                    <input type="text" placeholder="Liczba miejsc">
+                    <input type="submit" value="Dodaj salę">
+                </div>
+                <div class="content" id="Grupa">
+                    <input type="text" placeholder="Numer grupy">
+                    <input type="submit" value="Dodaj">
+                </div>
+                <div class="content" id="Wykladowca">
+                    <input type="text" placeholder="Tytuł wykładowcy">
+                    <input type="text" placeholder="Imie wykładowcy">
+                    <input type="text" placeholder="Nazwisko wykładowcy">
+                    <input type="submit" value="Dodaj">
+                </div>
+            </div>
+            <script>
+                function openG(evt, Name) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("content");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                  }
+                  document.getElementById(Name).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+                </script>
     </body>
 </html>
