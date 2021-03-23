@@ -120,3 +120,37 @@ input[value=Zaloguj]{
 .generator{
   padding: 20px 20px;
 }
+
+.generator{
+  width: auto;
+  height: fit-content;
+  background-color: rgb(62, 202, 49);
+}
+.genbts {
+  overflow: hidden;
+  border: 1px solid black;
+  background-color: #f1e2f3;
+}
+.genbts button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.genbts button:hover{
+  background-color: #ddd;
+}
+.genbts button.active{
+  background-color: #ccc;
+}
+.content{
+  background-color: teal;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid black;
+  border-top: none;
+}
