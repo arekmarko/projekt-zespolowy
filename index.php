@@ -45,10 +45,14 @@
         </li>
         <li class="zalbtn" style="float:right";><a href="login.php">Zaloguj się</a></li>
     </ul>
+    <label class="switch">
+        <input type="checkbox" onclick="toggleDark()">
+        <span class="slider"></span>
+    </label>
     <h1>Grupa 3ID11A</h1>
-    <form action="#">
+    <form action="#" style="margin-left:5%;">
         <label for="tydzien"><b>Wybierz tydzień:</b></label>
-            <select name="tydzien" id="tygodnie">
+            <select class="tydzien">
             <option value="1">1 tydzień 12.03-14.03</option>
             <option value="2">2 tydzień 19.03-21.03</option>
             <option value="3">3 tydzień 26.03-28.03</option>
@@ -61,7 +65,10 @@
             </select>
         <input type="submit" value="Wybierz">
     </form>
-    <h2>Zjazd I</h2>
+    <div style="height:2px; background-color:red; width:90%; margin:auto;">
+        
+    </div>
+    <h2>Zjazd I - 1 tydzień 12.03-14.03</h2>
     <table class="plan">
         <tr class="godziny">
             <th></th>
@@ -111,5 +118,17 @@
             <td>- cwiczenia</td>
         </tr>
     </table>
+    <div class="nawigacja">
+        <button class="poprzedni">&laquo; Poprzedni tydzień</button>
+        <button class="nastepny">Następny tydzień &raquo;</button>
+    </div>
 </body>
+<script>
+    function toggleDark(){
+        var element = document.body;
+        var element2 = document.getElementsByClassName("godziny");
+        element.classList.toggle("dark-mode");
+        element2.classList.toggle("white-mode");
+    }
+</script>
 </html>
