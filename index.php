@@ -10,12 +10,39 @@
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Znajdź grupę</a>
             <div class="dropdown-content">
-                <a href="#">1ID11A</a>
-                <a href="#">1ID11B</a>
-                <a href="#">2ID11A</a>
-                <a href="#">2ID11B</a>
-                <a href="#">3ID11A</a>
-                <a href="#">3ID11B</a>
+                <div class="dropdown2">
+                <a href="#">1 rok
+                    <i class="arrow right"></i></a>
+                <div class="dropdown2-content">
+                    <a href="#">1ID11A</a>
+                    <a href="#">1ID11B</a>
+                    <a href="#">1ID12A</a>
+                    <a href="#">1ID12B</a>
+                </div>
+                </div>
+                <div class="dropdown2">
+                <a href="#">2 rok
+                    <i class="arrow right"></i></a>
+                <div class="dropdown2-content">
+                    <a href="#">2ID11A</a>
+                    <a href="#">2ID11B</a>
+                    <a href="#">2ID12A</a>
+                    <a href="#">2ID12B</a>
+                </div>
+                </div>
+                <div class="dropdown2">
+                <a href="#">3 rok
+                    <i class="arrow right"></i></a>
+                <div class="dropdown2-content">
+                    <a href="#">3ID11A</a>
+                    <a href="#">3ID11B</a>
+                    <a href="#">3ID12A</a>
+                    <a href="#">3ID12B</a>
+                    <a href="#">3ID13A</a>
+                    <a href="#">3ID13B</a>
+                </div>
+                </div>
+                </div>
             </div>
         </li>
         <li class="dropdown">
@@ -45,6 +72,7 @@
         </li>
         <li class="zalbtn" style="float:right";><a href="login.php">Zaloguj się</a></li>
     </ul>
+    <p style="float:right;"><b>Dark mode</b></p>
     <label class="switch">
         <input type="checkbox" onclick="toggleDark()">
         <span class="slider"></span>
@@ -126,9 +154,10 @@
 <script>
     function toggleDark(){
         var element = document.body;
-        var element2 = document.getElementsByClassName("godziny");
+        var element2 = document.getElementsByClassName("legenda");
         element.classList.toggle("dark-mode");
-        element2.classList.toggle("white-mode");
+        element2.classList.toggle("dark-mode");
+        
     }
 </script>
 </html>
