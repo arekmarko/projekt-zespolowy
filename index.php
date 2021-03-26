@@ -154,10 +154,7 @@
 <script>
     function toggleDark(){
         var element = document.body;
-        var element2 = document.getElementsByClassName("legenda");
         element.classList.toggle("dark-mode");
-        element2.classList.toggle("dark-mode");
-        
     }
 </script>
 </html>
