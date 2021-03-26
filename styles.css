@@ -59,7 +59,6 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 .arrow{
   border: solid black;
-  display: inline-block;
   padding: 3px;
   border-width: 0 1px 1px 0;
   margin-top: 6px;
@@ -150,7 +149,13 @@ th, td{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-td{
+.dark-mode th,.dark-mode .nawigacja{
+  background-color: rgb(48, 48, 48);
+}
+.dark-mode td, .dark-mode .nawigacja button{
+  background-color: rgb(70,70,70);
+}
+.plan td{
     font-size: 14;
     color: black;
 }
@@ -173,20 +178,15 @@ h1, h2 {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 5%;
 }
-.legenda td{
-  color: white;
-}
 .nawigacja{
   display: inline-block;
-  background-color: rgb(37, 37, 37);
+  background-color: rgb(248,248,248);
   width: 90%;
   margin: 5%;
   height: 40px;
 }
 .nawigacja button{
   height: 40px;
-  color: white;
-  background-color: rgb(65, 65, 65);
   border: 0px;
 }
 .nawigacja .poprzedni{
@@ -196,11 +196,14 @@ h1, h2 {
   float: right;
 }
 .nawigacja button:hover{
-  background-color: rgb(180,180,180);
+  background-color: rgb(220,220,220);
   transform: scale(1.05);
   transition: 0.5s;
 }
-
+.dark-mode .nawigacja button:hover{
+  background-color: rgb(110,110,110);
+  transition: 0.5s;
+}
 
 
 
@@ -248,7 +251,8 @@ input[value=Zaloguj]{
 .content{
   background-color: teal;
   display: none;
-  padding: 6px 12px;
+  padding: 20px 12px;
+  min-height: 200px;
   border: 1px solid black;
   border-top: none;
 }
