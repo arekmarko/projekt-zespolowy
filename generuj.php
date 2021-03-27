@@ -6,7 +6,7 @@
     </head>
     <body>
     <ul class="navbar">
-        <li id=home><a href="#">PSK</a></li>
+        <li id=home><a href="index.php">PSK</a></li>
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Znajdź grupę</a>
             <div class="dropdown-content">
