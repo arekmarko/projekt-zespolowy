@@ -80,18 +80,53 @@
             </div>
                 <div class="content" id="Sala">
                     <input type="text" placeholder="Numer sali">
-                    <input type="text" placeholder="Liczba miejsc">
-                    <input type="submit" value="Dodaj salę">
+                    <input type="submit" value="Dodaj salę"><br>
+                    <input type="number" placeholder="Liczba miejsc">
+                    <input type="submit" value="Zaktualizuj liczbę miejsc"><br>
+                    <select class="Sala">
+                    <option value="1">2.31</option>
+                    <option value="2">2.32</option>
+                    </select>
+                    <select class="Przedmiot">
+                        <option value="1">1ID11A</option>    
+                        <option value="2">1ID11B</option>    
+                    </select>
+                    <input type="submit" value="Połącz">
                 </div>
                 <div class="content" id="Grupa">
                     <input type="text" placeholder="Numer grupy">
-                    <input type="submit" value="Dodaj">
+                    <input type="submit" value="Dodaj grupę"><br>
+                    <select class="grupa_liczba_studentow">
+                    <option value="1">11A</option>
+                    <option value="2">11B</option>
+                    </select>
+                    <input type="number" placeholder="Liczba studentów">
+                    <input type="submit" value="Zaktualizuj liczbę studentów"><br>
+                    <select class="grupa_przedmiot">
+                    <option value="1">11A</option>
+                    <option value="2">11B</option>
+                    </select>
+                    <select class="Przedmiot">
+                    <option value="1">Matematyka</option>
+                    <option value="2">Informatyka</option>
+                    </select>
+                    <input type="submit" value="Dodaj przedimot"><br>
                 </div>
                 <div class="content" id="Wykladowca">
                     <input type="text" placeholder="Tytuł wykładowcy">
                     <input type="text" placeholder="Imie wykładowcy">
                     <input type="text" placeholder="Nazwisko wykładowcy">
-                    <input type="submit" value="Dodaj">
+                    <input type="text" placeholder="Tytuł wykładowcy">
+                    <input type="submit" value="Dodaj wykładowcę"><br>
+                    <select class="Wykładowca">
+                    <option value="1">mgr. Jan Kowalski</option>
+                    <option value="2">mgr. Jan Kowalski 2</option>
+                    </select>
+                    <select class="Przedmiot">
+                    <option value="1">Matematyka</option>
+                    <option value="2">Informatyka</option>
+                    </select>
+                    <input type="submit" value="Dodaj przedmiot wykładowcy"><br>
                 </div>
             </div>
             <script>
