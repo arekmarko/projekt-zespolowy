@@ -77,21 +77,17 @@
                 <button class="tablinks" onclick="openG(event, 'Sala')">Dodaj salę</button>
                 <button class="tablinks" onclick="openG(event, 'Grupa')">Dodaj grupę</button>
                 <button class="tablinks" onclick="openG(event, 'Wykladowca')">Dodaj wykładowce</button>
+                <button class="tablinks" style="float:right">Generuj</button>
             </div>
                 <div class="content" id="Sala">
                     <input type="text" placeholder="Numer sali">
                     <input type="submit" value="Dodaj salę"><br>
+                    <select class="wybierz_sala">
+                    <option value="1">3.15d</option>
+                    <option value="2">4.15d</option>
+                    </select>
                     <input type="number" placeholder="Liczba miejsc">
                     <input type="submit" value="Zaktualizuj liczbę miejsc"><br>
-                    <select class="Sala">
-                    <option value="1">2.31</option>
-                    <option value="2">2.32</option>
-                    </select>
-                    <select class="Przedmiot">
-                        <option value="1">1ID11A</option>    
-                        <option value="2">1ID11B</option>    
-                    </select>
-                    <input type="submit" value="Połącz">
                 </div>
                 <div class="content" id="Grupa">
                     <input type="text" placeholder="Numer grupy">
